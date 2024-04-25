@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #35374B;
+    color: #78A083;
+}   
+
+header{
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #344955;
+    text-align: center;
+    color: white;
+}
+
+nav li{
+    list-style-type: none;
+}
+  
+nav{
+    background-color: #50727B;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+  
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+  
+nav a:hover {
+    font-weight: bold;
+}
+  
+nav ul{
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+main{
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside{
+    flex: 1;
+}
+
+h1 {
+    margin: 2em;
+    color: white; 
+  }
+
+h2, h3 {
+    color: #78A083;
+}
+
+p {
+    margin: 2em;
+    color: white;
+    font-size: large;
+    font-family: "Poppins", sans-serif;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+.card{
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    /* margin-top: 20px; */
+}
+  
+.profile-card header{
+    text-align: center;
+}
+  
+.profile-card img {
+    width: 200px;
+}
+
+
+footer {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #50727B;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    main{
+      flex-flow: column nowrap;
+    }
+
+    nav ul{
+        justify-content: center;
+    }
+  
+    main aside{
+      align-self: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav ul{
+      justify-content: center;
+    }
+  
+    main aside{
+      align-self: stretch;
+    }
+  }
